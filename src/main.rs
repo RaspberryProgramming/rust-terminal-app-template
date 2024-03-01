@@ -13,7 +13,7 @@ fn main() {
     let args = cli::Args::parse();
 
     // Setup Logging
-    let _handle = logging::setup_logging();
+    let _handle = logging::setup_logging(args.clone());
 
     info!("Writing file to {}", args.filename);
 
